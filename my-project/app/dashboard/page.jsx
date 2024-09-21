@@ -1,3 +1,7 @@
 export default function DashboardPage() {
-  return <h1>Dashboard page</h1>;
+  return (
+    <div className=" bg-backgroundDark">
+      <h1 className=" text-textPrimary">Dashboard page</h1>;
+    </div>
+  );
 }

@@ -9,7 +9,19 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        textPrimary: "white",
+        textSecondary: "rgb(213, 213, 213)",
+      },
+      backgroundColor: {
+        backgroundDark: "#11173a",
+        backgroundSoft: "rgb(42, 47, 74)",
+      },
+      fontFamily: {
+        playpen: ["Playpen Sans", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
