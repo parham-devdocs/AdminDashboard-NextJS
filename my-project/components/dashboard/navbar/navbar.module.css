@@ -1,0 +1,18 @@
+.container {
+  @apply p-2 bg-backgroundSoft flex justify-between items-center rounded-sm;
+}
+.menu {
+  @apply flex justify-between items-center gap-3;
+}
+.title{
+    @apply text-slate-300
+}
+.search {
+  @apply flex items-center gap-3 bg-backgroundDark p-3 rounded-md;
+}
+.icons {
+  @apply flex  gap-4;
+}
+.input {
+  @apply rounded-md bg-transparent;
+}

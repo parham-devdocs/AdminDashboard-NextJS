@@ -1,5 +1,5 @@
 import classes from "./sidebar.module.css";
-import { MdDashboard } from "react-icons/md";
+import { MdDashboard, MdExitToApp } from "react-icons/md";
 import { MdSupervisedUserCircle } from "react-icons/md";
 import { MdShoppingBag } from "react-icons/md";
 import { MdAttachMoney } from "react-icons/md";
@@ -91,5 +91,6 @@ export default function DashboardSidebar() {
         </li>
       ))}
     </ul>
+    <button className={classes.button}>Log out <MdExitToApp size={20}/></button>
   </aside>;
 }

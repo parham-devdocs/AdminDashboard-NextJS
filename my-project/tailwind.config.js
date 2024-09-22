@@ -17,7 +17,7 @@ module.exports = {
       },
       backgroundColor: {
         backgroundDark: "#11173a",
-        backgroundSoft: "#34325e",
+        backgroundSoft: "#030C3D",
       },
       fontFamily: {
         playpen: ["Playpen Sans", "sans-serif"],
