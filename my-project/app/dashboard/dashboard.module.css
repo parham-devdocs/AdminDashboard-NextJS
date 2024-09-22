@@ -1,0 +1,10 @@
+.container {
+  @apply flex ;
+}
+.menu {
+  @apply flex-1 bg-backgroundSoft p-6 ;
+}
+
+.content {
+  @apply flex-[4] p-6
+}

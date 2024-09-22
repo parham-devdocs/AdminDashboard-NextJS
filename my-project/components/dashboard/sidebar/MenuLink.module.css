@@ -1,0 +1,6 @@
+.link {
+  @apply flex items-center justify-between hover:bg-backgroundDark h-12 p-2 rounded-md transition-colors duration-300
+}
+.active{
+    @apply text-red-600 bg-white;
+}

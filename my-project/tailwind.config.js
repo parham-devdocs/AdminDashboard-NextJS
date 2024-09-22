@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -16,7 +17,7 @@ module.exports = {
       },
       backgroundColor: {
         backgroundDark: "#11173a",
-        backgroundSoft: "rgb(42, 47, 74)",
+        backgroundSoft: "#34325e",
       },
       fontFamily: {
         playpen: ["Playpen Sans", "sans-serif"],

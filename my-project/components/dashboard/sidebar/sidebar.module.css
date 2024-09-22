@@ -1,0 +1,21 @@
+.container {
+  @apply text-textPrimary  sticky mt-12 h-screen;
+}
+.cat {
+  @apply space-y-3;
+}
+.cat_title {
+  @apply text-slate-300;
+}
+.user {
+  @apply flex gap-10 mb-5;
+}
+.userImage {
+  @apply rounded-full;
+}
+.userDetail {
+  @apply flex-col flex;
+}
+.username {
+  @apply text-slate-300 font-bold;
+}
