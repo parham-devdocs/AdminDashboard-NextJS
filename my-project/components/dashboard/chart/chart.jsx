@@ -54,7 +54,7 @@ export default function Chart() {
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="name" />
         <YAxis />
-        <Tooltip />
+        <Tooltip contentStyle={{backgroundColor:"#11173a",border:"none" ,color:"white"}} />
         <Legend />
         <Line type="monotone" dataKey="visit" stroke="#8884d8" />
         <Line type="monotone" dataKey="click" stroke="#82ca9d" />

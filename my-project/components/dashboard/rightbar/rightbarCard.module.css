@@ -1,0 +1,15 @@
+.container{
+    @apply leading-5 bg-backgroundSoft p-5 rounded-md space-y-4
+}
+.primaryHeader{
+    @apply text-textPrimary text-lg
+}
+.secondaryHeader{
+    @apply text-textPrimary text-lg
+}
+.content{
+    @apply text-textSecondary text-sm
+}
+.button{
+    @apply text-textSecondary flex gap-4 bg-purple-700 rounded-md p-2 items-center hover:bg-purple-800
+}

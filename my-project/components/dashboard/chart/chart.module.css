@@ -1,6 +1,9 @@
-.container{
-    @apply w-full bg-backgroundSoft p-4 rounded-sm h-[250px] 
+.container {
+  @apply w-full bg-backgroundSoft p-4 rounded-sm h-[300px] space-y-3;
 }
-.title{
-    @apply font-bold
+.title {
+  @apply font-bold text-textPrimary;
+}
+.tooltip{
+    @apply bg-backgroundDark rounded-md
 }
