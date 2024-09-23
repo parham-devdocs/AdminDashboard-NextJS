@@ -1,0 +1,34 @@
+.container {
+  @apply bg-backgroundSoft p-4 text-textSecondary rounded-md; /* Added padding */
+}
+
+.table {
+  @apply w-full border-collapse; /* Make the table full width and collapse borders */
+}
+
+.name {
+  @apply flex items-center gap-2;
+}
+
+.userImage {
+  @apply rounded-full;
+}
+
+.title {
+  @apply mb-5 text-2xl text-textSecondary;
+}
+.td {
+  @apply p-3;
+}
+.status {
+  @apply px-1 rounded-md bg-red-400 font-bold;
+}
+.pending{
+    @apply bg-[#979206]
+}
+.done{
+    @apply bg-slate-700
+}
+.cancelled{
+    @apply bg-red-900
+}

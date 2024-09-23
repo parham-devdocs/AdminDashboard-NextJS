@@ -1,5 +1,4 @@
+import classes from "./rightbar.module.css"
 export default function Rightbar() {
-    return (
-        
-    )
+    return <div className={classes.container}>Rightbar</div>;
 }

@@ -16,7 +16,7 @@ export default function DashboardNavbar() {
       <div className={classes.menu}>
         <div className={classes.search}>
           <MdSearch className=" cursor-pointer text-slate-300" />
-          <input placeholder="Search..." type="text" className="input" />
+          <input placeholder="Search..." type="text" className={classes.input} />
         </div>
         <div className={classes.icons}>
           <MdOutlineChat

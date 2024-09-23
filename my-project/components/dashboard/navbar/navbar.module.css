@@ -14,5 +14,5 @@
   @apply flex  gap-4;
 }
 .input {
-  @apply rounded-md bg-transparent;
+  @apply rounded-md bg-transparent outline-none text-white;
 }
