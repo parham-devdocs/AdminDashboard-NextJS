@@ -1,0 +1,48 @@
+.container {
+  @apply bg-backgroundSoft p-5 text-textSecondary;
+}
+.search {
+  @apply flex items-center gap-3 bg-backgroundDark p-3 rounded-md;
+}
+.header {
+  @apply flex justify-between;
+}
+.input {
+  @apply rounded-md bg-transparent outline-none text-white;
+}
+.Add_btn {
+  @apply px-2 bg-purple-600 text-textPrimary rounded-md;
+}
+.table {
+  @apply w-full border-collapse mt-5;
+}
+
+.name {
+  @apply flex items-center gap-2;
+}
+
+.userImage {
+  @apply rounded-full;
+}
+
+.title {
+  @apply mb-5 text-2xl text-textSecondary;
+}
+.td {
+  @apply p-3;
+}
+.buttons {
+  @apply flex gap-2;
+}
+.viewBtn {
+  @apply bg-green-700 px-2 py-1 rounded-md hover:bg-green-800;
+}
+.deleteBtn {
+  @apply bg-red-700 p-1 rounded-md hover:bg-red-800;
+}
+.controlers {
+  @apply flex justify-between w-full;
+}
+.controlerBtn {
+  @apply bg-white py-1 px-2 text-black rounded-md hover:bg-slate-400 transition-colors duration-300;
+}

@@ -10,9 +10,10 @@
 .search {
   @apply flex items-center gap-3 bg-backgroundDark p-3 rounded-md;
 }
-.icons {
-  @apply flex  gap-4;
-}
+
 .input {
   @apply rounded-md bg-transparent outline-none text-white;
+}
+.icons {
+  @apply flex  gap-4;
 }
