@@ -1,0 +1,21 @@
+.container {
+  @apply bg-backgroundSoft w-full min-h-36 mt-6 rounded-sm p-4 flex flex-col gap-4;
+}
+.inputs {
+  @apply grid grid-cols-2 gap-40;
+}
+.input {
+  @apply bg-backgroundDark rounded-md focus:outline-white py-3 px-3 text-textPrimary;
+}
+.firstCol {
+  @apply flex flex-col gap-6;
+}
+.secondCol {
+  @apply flex flex-col gap-6;
+}
+.textArea {
+  @apply bg-backgroundDark p-2 h-[250px] focus:outline-white  focus:outline-2 w-full;
+}
+.submitBtn{
+    @apply bg-purple-600 rounded-md py-3 
+}
