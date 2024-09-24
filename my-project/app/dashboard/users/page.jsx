@@ -1,6 +1,7 @@
 import { MdSearch } from "react-icons/md";
 import classes from "./users.module.css";
 import Image from "next/image";
+import Link from "next/link";
 const users = [
   {
     name: "John Doe",
@@ -51,7 +52,9 @@ export default function UserPage() {
             className={classes.input}
           />
         </div>
-        <button className={classes.Add_btn}>Add New</button>
+        <Link  href={"dashboard/users/add"}>
+          <button className={classes.Add_btn}>Add New</button>
+        </Link>
       </div>
       <table className={classes.table}>
         <thead>
@@ -76,12 +79,10 @@ export default function UserPage() {
                 />
                 {user.name}
               </td>
-              <td className={classes.td}>
-                { user.email }
-              </td>
+              <td className={classes.td}>{user.email}</td>
               <td className={classes.td}>{user.createdAt}</td>
               <td className={classes.td}>{user.role}</td>
-              <td className={classes.td}>{ user.action }</td>
+              <td className={classes.td}>{user.action}</td>
               <td className={`${classes.td} ${classes.buttons}`}>
                 <button className={classes.viewBtn}>View</button>
                 <button className={classes.deleteBtn}>Delete</button>
