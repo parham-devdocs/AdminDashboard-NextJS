@@ -1,21 +1,17 @@
 .container {
-  @apply bg-backgroundSoft w-full min-h-36 mt-6 rounded-md p-4 flex flex-col gap-6 ;
+  @apply bg-backgroundSoft p-4 rounded-md mt-4;
 }
-.inputs {
-  @apply grid lg:grid-cols-2 sm:grid-cols-1 gap-40;
+.form {
+  @apply flex flex-wrap justify-between gap-5;
 }
 .input {
-  @apply bg-backgroundDark rounded-md focus:outline-white py-3 px-3 text-textPrimary border-slate-800 border-2;
-}
-.firstCol {
-  @apply flex flex-col gap-6;
-}
-.secondCol {
-  @apply flex flex-col gap-6;
+  @apply p-5 w-[45%] bg-backgroundDark rounded-md focus:outline-white py-3 px-3 text-textPrimary border-slate-800 border-2;
 }
 .textArea {
-  @apply bg-backgroundDark p-2  focus:outline-white  focus:outline-1 transition duration-300 w-full rounded-md text-textPrimary border-slate-800 border-2;
+  @apply p-5 w-full bg-backgroundDark rounded-md focus:outline-white py-3 px-3 text-textPrimary border-slate-800 border-2;
 }
-.submitBtn{
-    @apply bg-purple-600 rounded-md py-3 hover:bg-purple-700 transition-colors duration-300 text-textPrimary
+
+.btn{
+       @apply bg-purple-600 rounded-md py-3 hover:bg-purple-700 transition-colors duration-300 w-full text-textPrimary
+
 }
