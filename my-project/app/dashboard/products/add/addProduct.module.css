@@ -1,0 +1,17 @@
+.container {
+  @apply bg-backgroundSoft p-4 rounded-md mt-4;
+}
+.form {
+  @apply flex flex-wrap justify-between gap-5;
+}
+.input {
+  @apply p-5 w-[45%] bg-backgroundDark rounded-md focus:outline-white py-3 px-3 text-textPrimary border-slate-800 border-2;
+}
+.desc {
+  @apply p-5 w-full bg-backgroundDark rounded-md focus:outline-white py-3 px-3 text-textPrimary border-slate-800 border-2;
+}
+
+.btn{
+       @apply bg-purple-600 rounded-md py-3 hover:bg-purple-700 transition-colors duration-300 w-full text-textPrimary
+
+}

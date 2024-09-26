@@ -50,7 +50,7 @@ export default function UserPage() {
             className={classes.input}
           />
         </div>
-        <Link href={"dashboard/products/add"}>
+        <Link href={"products/add"}>
           <button className={classes.Add_btn}>Add New</button>
         </Link>
       </div>

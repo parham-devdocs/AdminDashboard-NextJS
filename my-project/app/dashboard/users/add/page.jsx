@@ -2,7 +2,7 @@ import classes from "./addUser.module.css";
 
 export default function AddUserPage(params) {
   return (
-    <div className={classes.container}>
+    <form className={classes.container}>
       <div className={classes.inputs}>
         <div className={classes.firstCol}>
           <input type="text" name="username" placeholder="Username" className={classes.input} />
@@ -24,9 +24,9 @@ export default function AddUserPage(params) {
         </div>
           </div>
           
-          <textarea name="address" placeholder="address" className={classes.textArea} ></textarea>
+          <textarea name="address" placeholder="address" className={classes.textArea}  rows={16} ></textarea>
           <button className={classes.submitBtn}>Submit</button>
           
-    </div>
+    </form>
   );
 }

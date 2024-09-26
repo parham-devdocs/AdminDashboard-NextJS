@@ -1,11 +1,11 @@
 .container {
-  @apply bg-backgroundSoft w-full min-h-36 mt-6 rounded-sm p-4 flex flex-col gap-4;
+  @apply bg-backgroundSoft w-full min-h-36 mt-6 rounded-md p-4 flex flex-col gap-6 ;
 }
 .inputs {
-  @apply grid grid-cols-2 gap-40;
+  @apply grid lg:grid-cols-2 sm:grid-cols-1 gap-40;
 }
 .input {
-  @apply bg-backgroundDark rounded-md focus:outline-white py-3 px-3 text-textPrimary;
+  @apply bg-backgroundDark rounded-md focus:outline-white py-3 px-3 text-textPrimary border-slate-800 border-2;
 }
 .firstCol {
   @apply flex flex-col gap-6;
@@ -14,8 +14,8 @@
   @apply flex flex-col gap-6;
 }
 .textArea {
-  @apply bg-backgroundDark p-2 h-[250px] focus:outline-white  focus:outline-2 w-full;
+  @apply bg-backgroundDark p-2  focus:outline-white  focus:outline-1 transition duration-300 w-full rounded-md text-textPrimary border-slate-800 border-2;
 }
 .submitBtn{
-    @apply bg-purple-600 rounded-md py-3 
+    @apply bg-purple-600 rounded-md py-3 hover:bg-purple-700 transition-colors duration-300 text-textPrimary
 }

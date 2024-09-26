@@ -1,5 +1,5 @@
 .container {
-  @apply bg-backgroundSoft p-5 text-textSecondary;
+  @apply bg-backgroundSoft p-5 text-textSecondary rounded-md;
 }
 .search {
   @apply flex items-center gap-3 bg-backgroundDark p-3 rounded-md;
