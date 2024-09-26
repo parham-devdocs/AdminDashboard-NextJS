@@ -9,6 +9,7 @@ const users = [
     createdAt: "2023-01-15",
     role: "admin",
     action: "active",
+    id:1
   },
   {
     name: "Jane Smith",
@@ -16,6 +17,7 @@ const users = [
     createdAt: "2023-02-20",
     role: "client",
     action: "passive",
+    id:2
   },
   {
     name: "Alice Johnson",
@@ -23,6 +25,7 @@ const users = [
     createdAt: "2023-03-05",
     role: "client",
     action: "passive",
+    id:3
   },
   {
     name: "Bob Brown",
@@ -30,6 +33,7 @@ const users = [
     createdAt: "2023-04-10",
     role: "clinet",
     action: "active",
+    id:4
   },
   {
     name: "Charlie Black",
@@ -37,6 +41,7 @@ const users = [
     createdAt: "2023-05-25",
     role: "admin",
     action: "active",
+    id:5
   },
 ];
 
@@ -84,7 +89,7 @@ export default function UserPage() {
               <td className={classes.td}>{user.role}</td>
               <td className={classes.td}>{user.action}</td>
               <td className={`${classes.td} ${classes.buttons}`}>
-                <button className={classes.viewBtn}>View</button>
+                <button className={classes.viewBtn}><Link href={`users/${user.id}`}>View</Link></button>
                 <button className={classes.deleteBtn}>Delete</button>
               </td>
             </tr>

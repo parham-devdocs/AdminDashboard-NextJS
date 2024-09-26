@@ -10,6 +10,7 @@ const products = [
     createdAt: "2023-09-01",
     stock: 100,
     role: "admin", // or any relevant role
+    id:1
   },
   {
     title: "Product B",
@@ -18,6 +19,7 @@ const products = [
     createdAt: "2023-09-02",
     stock: 50,
     role: "client", // or any relevant role
+    id:2
   },
   {
     title: "Product C",
@@ -26,6 +28,7 @@ const products = [
     createdAt: "2023-09-03",
     stock: 75,
     role: "admin", // or any relevant role
+    id:3
   },
   {
     title: "Product D",
@@ -34,6 +37,7 @@ const products = [
     createdAt: "2023-09-04",
     stock: 20,
     role: "client", // or any relevant role
+    id:4
   },
 ];
 
@@ -86,7 +90,7 @@ export default function UserPage() {
               <td className={classes.td}>{product.role}</td>
 
               <td className={`${classes.td} ${classes.buttons}`}>
-                <button className={classes.viewBtn}>View</button>
+                <button className={classes.viewBtn}><Link href={`/dashboard/products/${product.id}`}>View</Link></button>
                 <button className={classes.deleteBtn}>Delete</button>
               </td>
             </tr>
