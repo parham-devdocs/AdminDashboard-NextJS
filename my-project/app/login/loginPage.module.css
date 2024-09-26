@@ -1,0 +1,15 @@
+.container {
+  @apply bg-backgroundDark  flex justify-center items-center w-screen h-screen;
+}
+.form {
+  @apply flex flex-col gap-6 bg-backgroundSoft pb-16 pt-6 px-6 w-[400px] min-h-16 rounded-lg;
+}
+.header {
+  @apply text-textPrimary text-3xl text-center;
+}
+.input {
+  @apply w-full bg-backgroundDark text-textPrimary py-3 px-2 border-2 border-slate-700 rounded-md;
+}
+.btn {
+  @apply bg-purple-600 hover:bg-purple-700 py-3 rounded-md text-textPrimary;
+}
