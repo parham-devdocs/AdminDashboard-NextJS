@@ -22,7 +22,7 @@
 }
 
 .userImage {
-  @apply rounded-full;
+  @apply rounded-full w-10 h-10;
 }
 
 .title {
@@ -32,7 +32,7 @@
   @apply p-3;
 }
 .buttons {
-  @apply flex gap-2;
+  @apply flex gap-2 my-3;
 }
 .viewBtn {
   @apply bg-green-700 px-2 py-1 rounded-md hover:bg-green-800;
@@ -44,8 +44,8 @@
   @apply flex justify-between w-full;
 }
 .controlerBtn {
-  @apply bg-white py-1 px-2 text-black rounded-md hover:bg-slate-400 transition-colors duration-300 cursor-pointer
+  @apply bg-white py-1 px-2 text-black rounded-md hover:bg-slate-400 transition-colors duration-300 cursor-pointer;
 }
-.controlerBtn:disabled{
-  @apply cursor-not-allowed
+.controlerBtn:disabled {
+  @apply cursor-not-allowed;
 }

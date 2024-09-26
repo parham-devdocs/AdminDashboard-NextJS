@@ -39,15 +39,15 @@ export default async function UserPage() {
             <tr key={index}>
               <td className={`${classes.td} ${classes.name}`}>
                 <Image
-                  src={"/noavatar.png"}
+                  src={user.img || "/noavatar.png"}
                   height={40}
                   width={40}
                   alt={`${user.username}'s avatar`}
                   className={classes.userImage}
                 />
-                {user.name}
+                {user.username}
               </td>
-              <td className={classes.td}>{user.username}</td>
+              <td className={classes.td}>{user.email}</td>
               <td className={classes.td}>
                 {user.createdAt.toLocaleDateString("en-US", {
                   year: "numeric",
@@ -58,7 +58,10 @@ export default async function UserPage() {
               <td className={classes.td}>
                 {user.isAdmin ? "admin" : "client"}
               </td>
-              <td className={classes.td}>{user.phone}</td>
+              <td className={classes.td}>
+                {" "}
+                {user.isActive ? "active" : "inactive"}
+              </td>
               <td className={`${classes.td} ${classes.buttons}`}>
                 <button className={classes.viewBtn}>
                   <Link href={`users/${user.id}`}>View</Link>
