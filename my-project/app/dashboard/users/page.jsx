@@ -1,25 +1,19 @@
-import { MdSearch } from "react-icons/md";
 import classes from "./users.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
 import prisma from './../../lib/prisma';
 
+import Search from "../../../components/dashboard/search/Search";
+
 
 export default async function UserPage() {
  const users=await prisma.user.findMany()
-  console.log(users.length)
+ 
   return (
     <div className={classes.container}>
       <div className={classes.header}>
-        <div className={classes.search}>
-          <MdSearch className=" cursor-pointer text-slate-300" />
-          <input
-            placeholder="Search..."
-            type="text"
-            className={classes.input}
-          />
-        </div>
+      <Search placeholder={"search user..."}/>
         <Link href={"users/add"}>
           <button className={classes.Add_btn}>Add New</button>
         </Link>
