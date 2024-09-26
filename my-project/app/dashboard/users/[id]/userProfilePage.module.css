@@ -1,0 +1,20 @@
+.container {
+  @apply mt-5 flex gap-3;
+}
+.infoContainer {
+  @apply flex flex-col flex-1 p-3 gap-3 text-textPrimary bg-backgroundDark h-fit rounded-md;
+}
+.image {
+  @apply rounded-md  w-fit;
+}
+.formContainer {
+  @apply flex flex-col bg-backgroundDark flex-[4] text-textPrimary p-3 gap-2;
+}
+.input{
+
+  @apply  bg-backgroundDark rounded-md focus:outline-white py-2 px-3 text-textPrimary border-slate-800 border-2;
+
+}
+.btn{
+    @apply bg-purple-600 hover:bg-purple-700 text-textPrimary py-3 w-full rounded-md
+}
