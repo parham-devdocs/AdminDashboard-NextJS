@@ -3,16 +3,24 @@ import { MdSearch } from "react-icons/md";
 import classes from "./search.module.css";
 import { usePathname, useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
+import { useDebouncedCallback } from 'use-debounce';
 export default function Search({ placeholder }) {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const { replace } = useRouter();
 
-    const searchHandler = (e) => {
+    const searchHandler =useDebouncedCallback((e) => {
         const params = new URLSearchParams(searchParams);
-        params.set("q", e.target.value);
-        replace(`${pathname}?${params}`);
-  };
+        if (e.target.value) {
+                    params.set("q", e.target.value);
+
+        }
+        else{
+            params.delete("q")
+        }
+                replace(`${pathname}?${params}`);
+
+    },2000)
   return (
     <div className={classes.search}>
       <MdSearch className=" cursor-pointer text-slate-300" />

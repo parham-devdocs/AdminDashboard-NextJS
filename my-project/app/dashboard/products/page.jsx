@@ -2,6 +2,7 @@ import { MdSearch } from "react-icons/md";
 import classes from "./products.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import Pagination from "../../../components/dashboard/pagination/Pagination";
 const products = [
   {
     title: "Product A",
@@ -97,10 +98,7 @@ export default function UserPage() {
           ))}
         </tbody>
       </table>
-      <div className={classes.controlers}>
-        <button className={classes.controlerBtn}>Privious</button>
-        <button className={classes.controlerBtn}>Next</button>
-      </div>
+      <Pagination/>
     </div>
   );
 }

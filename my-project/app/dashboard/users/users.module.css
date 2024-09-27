@@ -40,12 +40,4 @@
 .deleteBtn {
   @apply bg-red-700 p-1 rounded-md hover:bg-red-800;
 }
-.controlers {
-  @apply flex justify-between w-full;
-}
-.controlerBtn {
-  @apply bg-white py-1 px-2 text-black rounded-md hover:bg-slate-400 transition-colors duration-300 cursor-pointer;
-}
-.controlerBtn:disabled {
-  @apply cursor-not-allowed;
-}
+

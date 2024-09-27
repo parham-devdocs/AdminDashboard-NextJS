@@ -5,11 +5,31 @@ import Link from "next/link";
 import prisma from './../../lib/prisma';
 
 import Search from "../../../components/dashboard/search/Search";
+import Pagination from './../../../components/dashboard/pagination/Pagination';
 
-
-export default async function UserPage() {
- const users=await prisma.user.findMany()
- 
+export default async function UserPage({ searchParams }) {
+  const q = searchParams?.q 
+  const page=searchParams?.page ||1
+  let users;
+  if (q) {
+    users=await prisma.user.findMany({
+      where: {
+        username: {
+          startsWith:q
+        }
+      },
+      skip: 5 * (page - 1),
+      take:5
+    })
+  }
+  else {
+    users = await prisma.user.findMany(
+      {
+        skip: 5 * (page - 1),
+        take:5
+   }
+    )
+} 
   return (
     <div className={classes.container}>
       <div className={classes.header}>
@@ -66,10 +86,7 @@ export default async function UserPage() {
           ))}
         </tbody>
       </table>
-      <div className={classes.controlers}>
-        <button className={classes.controlerBtn}>Privious</button>
-        <button className={classes.controlerBtn}>Next</button>
-      </div>
+      <Pagination/>
     </div>
   );
 }
