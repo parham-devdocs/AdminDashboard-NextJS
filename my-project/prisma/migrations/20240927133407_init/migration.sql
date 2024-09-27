@@ -9,6 +9,7 @@ CREATE TABLE "User" (
     "isActive" BOOLEAN NOT NULL DEFAULT true,
     "phone" TEXT NOT NULL,
     "address" TEXT NOT NULL,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" DATETIME NOT NULL
 );
 
@@ -22,6 +23,8 @@ CREATE TABLE "Product" (
     "stock" INTEGER NOT NULL,
     "color" TEXT NOT NULL,
     "size" TEXT NOT NULL,
+    "cat" TEXT NOT NULL,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" DATETIME NOT NULL
 );
 

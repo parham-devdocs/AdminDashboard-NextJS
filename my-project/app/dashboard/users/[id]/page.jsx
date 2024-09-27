@@ -5,10 +5,13 @@ import { Suspense } from "react";
 import Loading from "../../../loading";
 
 import { revalidatePath } from "next/cache";
+import { notFound } from 'next/navigation';
 export default async function userProfilePage({ params }) {
   const userId = Number(params.id);
   const userInfo = await prisma.user.findUnique({ where: { id: userId } });
-
+if (!userInfo) {
+  return notFound()
+}
   const updateUser = async (formdata) => {
     "use server";
 
