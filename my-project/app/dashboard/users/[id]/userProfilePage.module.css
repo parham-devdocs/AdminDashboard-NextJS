@@ -5,7 +5,7 @@
   @apply flex flex-col flex-1 p-3 gap-3 text-textPrimary bg-backgroundDark h-fit rounded-md;
 }
 .image {
-  @apply rounded-md  w-fit;
+  @apply rounded-md  w-fit ml-auto mr-auto;
 }
 .formContainer {
   @apply flex flex-col bg-backgroundDark flex-[4] text-textPrimary p-3 gap-2;
