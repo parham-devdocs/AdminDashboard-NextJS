@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playpen.className}  antialiased bg-blue-950 `}
+        className={`${playpen.className}  antialiased bg-blue-950 h-screen`}
       >
         {children}
       </body>

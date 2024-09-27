@@ -25,7 +25,6 @@ export default async function productProfilePage({ params }) {
        data: { price,stock,color,size ,cat,desc},
      });
      revalidatePath(`dashboard/products/${productId}`);
-    
    };
   return (
     <Suspense fallback={<Loading />}>
@@ -33,7 +32,7 @@ export default async function productProfilePage({ params }) {
         <div className={classes.infoContainer}>
           <div className={classes.imgContainer}>
             <Image
-              src={ product.img && "/noproduct.jpg"}
+              src={product.img && "/noproduct.jpg"}
               alt={`${product.title} profile image`}
               width={150}
               height={100}
@@ -47,7 +46,7 @@ export default async function productProfilePage({ params }) {
           <input
             type="text"
             name="title"
-           disabled
+            disabled
             className={classes.input}
             defaultValue={product.title}
           />
@@ -80,7 +79,7 @@ export default async function productProfilePage({ params }) {
             defaultValue={product.size}
           />{" "}
           <label htmlFor="cat">choose a category</label>
-          <select name="cat" id="cat" className={classes.input} >
+          <select name="cat" id="cat" className={classes.input}>
             <option value={"kitchen"}>kitchen</option>
             <option value={"computers"}>computers</option>
           </select>
@@ -95,6 +94,7 @@ export default async function productProfilePage({ params }) {
             Update
           </button>
         </div>
+      
       </form>
     </Suspense>
   );
